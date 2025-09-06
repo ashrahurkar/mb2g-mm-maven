@@ -20,6 +20,8 @@
 
     <modules>
         <module>jpa-entities</module>
+        <module>another-module</module>
+        <module>demo-module</module>
     </modules>
 
 </project>
