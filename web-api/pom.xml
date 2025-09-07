@@ -13,31 +13,20 @@
     <artifactId>web-api</artifactId>
     <version>${revision}</version>
 
-    <properties>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <jaxb.api.version>2.3.1</jaxb.api.version>
-        <jaxb.core.version>4.0.5</jaxb.core.version>
-        <jaxb.runtime.version>4.0.5</jaxb.runtime.version>
-    </properties>
-    
     <dependencies>
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
-            <version>${jaxb.api.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-core -->
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-core</artifactId>
-            <version>${jaxb.core.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
-            <version>${jaxb.runtime.version}</version>
         </dependency>
     </dependencies>
 
@@ -46,7 +35,7 @@
             <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
                 <artifactId>maven-jaxb2-plugin</artifactId>
-                <version>0.15.3</version>
+                <version>${maven.jaxb2.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -58,7 +47,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
-                <version>3.4.1</version>
+                <version>${maven.clean.version}</version>
                 <executions>
                     <execution>
                         <id>auto-clean</id>

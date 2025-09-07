@@ -13,12 +13,6 @@
     <artifactId>converters</artifactId>
     <version>${revision}</version>
 
-    <properties>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <mapstruct.version>1.6.3</mapstruct.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.example</groupId>
@@ -34,7 +28,6 @@
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>${mapstruct.version}</version>
         </dependency>
     </dependencies>
 
@@ -43,7 +36,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.14.0</version>
+                <version>${maven.compiler.version}</version>
                 <configuration>
                     <annotationProcessorPaths>
                         <path>
