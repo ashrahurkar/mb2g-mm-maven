@@ -6,12 +6,12 @@
     <parent>
         <groupId>com.example</groupId>
         <artifactId>mb2g-mm-maven</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
 
     <groupId>com.example</groupId>
     <artifactId>converters</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
 
     <properties>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -23,12 +23,12 @@
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>jpa-entities</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>web-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${revision}</version>
         </dependency><!--
         https://mvnrepository.com/artifact/org.mapstruct/mapstruct -->
         <dependency>
