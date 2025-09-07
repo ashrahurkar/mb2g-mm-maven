@@ -21,7 +21,7 @@
     <modules>
         <module>jpa-entities</module>
         <module>another-module</module>
-        <module>demo-module</module>
+        <module>web-api</module>
     </modules>
 
 </project>
