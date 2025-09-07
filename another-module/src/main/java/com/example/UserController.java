@@ -5,6 +5,6 @@ import com.example.entities.User;
 public class UserController {
 
     User saveUser(UserCommand command){
-        return new User();
+        return UserMapper.INSTANCE.userCommandToUser(command);
     }
 }
